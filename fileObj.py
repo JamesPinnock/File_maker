@@ -1,24 +1,3 @@
-# with open ( 'fileObj1', 'r' ) as rf:
-#     with open ( 'test_copy.txt', 'w' ) as wf:
-#         for line in rf:
-#             wf.write ( line )
-
-# f.write ( "test" )
-# size_to_read = 10
-# print ( "Possition: " + str ( f.tell () ) )
-# f_contetnts = f.read ( size_to_read )
-#
-# while len ( f_contetnts ) > 0:
-#     print ( "Possition: " + str ( f.tell () ) )
-#
-#     print ( f_contetnts, end="*" )
-#
-#     f_contetnts = f.read ( size_to_read )
-#
-#     print ( len ( f_contetnts ) )
-
-
-# print ( f.closed )
 import os
 
 
@@ -44,7 +23,6 @@ def folderMaker():
         os.makedirs ( dir_name )
         os.chdir(dir_name)
         multi_file (10)
-
 
 
     except FileExistsError:
